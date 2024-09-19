@@ -45,3 +45,11 @@ This Go example demonstrates how to use worker pool using goroutines in a better
 
 - **`getData`**: A placeholder function that simulates fetching data for report generation. In the actual implementation, this would retrieve real data.
 
+## How to Run
+
+1. **Clone the Repository**:
+   - Clone this repository to your local machine.
+
+2. **Run the Application**:
+   ```bash
+   go run main.go
