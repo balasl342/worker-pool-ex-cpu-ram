@@ -27,3 +27,21 @@ This Go example demonstrates how to use worker pool using goroutines in a better
 4. **Report Generation**:
    - The core business logic for generating a report can be defined inside the `generateReport` function.
 
+## Code Breakdown
+
+### `main.go`
+
+- **`UserController`**: A placeholder struct representing the user management module.
+  
+- **`generateReport`**: The function responsible for generating a report. It takes in a `UserController` instance and a job (`ps`).
+
+- **`workerPool`**: The function that implements the worker pool. Each worker processes jobs from the `jobs` channel and calls the `generateReport` function.
+
+- **`monitorResourceUsage`**: This function checks the current system's CPU and memory usage. If either exceeds 80%, it introduces a delay to prevent overloading.
+
+- **`getCpuUsage`**: A simple function that returns CPU usage by calculating the ratio of Goroutines to CPU cores.
+
+- **`downloadReport`**: The main function that initializes the worker pool and distributes jobs to workers.
+
+- **`getData`**: A placeholder function that simulates fetching data for report generation. In the actual implementation, this would retrieve real data.
+
